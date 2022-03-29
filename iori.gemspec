@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = %w[MoguraStore]
   spec.email         = %w[368034+lisp719@users.noreply.github.com]
 
-  spec.summary       = 'Configure rails config easily'
+  spec.summary       = 'Configure rails config easily.'
   spec.description   = spec.summary
   spec.homepage      = 'https://github.com/mogurastore/iori'
   spec.license       = 'MIT'
