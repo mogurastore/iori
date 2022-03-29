@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "iori/version"
+require_relative 'iori/version'
 
 module Iori
   class Error < StandardError; end
