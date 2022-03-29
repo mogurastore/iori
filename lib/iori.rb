@@ -2,7 +2,7 @@
 
 require_relative 'iori/version'
 
+require_relative 'iori/railtie' if defined?(Rails::Railtie)
+
 module Iori
-  class Error < StandardError; end
-  # Your code goes here...
 end
