@@ -9,6 +9,6 @@ module Iori
       config.app_generators.view_specs = false
     end
 
-    config.web_console.permissions = '0.0.0.0/0' if Rails.env.development?
+    config.web_console.permissions = '0.0.0.0/0' if Rails.env.development? && config.respond_to?(:web_console)
   end
 end
