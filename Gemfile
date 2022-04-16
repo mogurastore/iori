@@ -14,3 +14,5 @@ gem 'rubocop', '~> 1.7'
 gem 'rubocop-rake', '~> 0.6.0'
 
 gem 'rubocop-rspec', '~> 2.9'
+
+gem "steep", "~> 0.52.0"
