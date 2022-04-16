@@ -1,0 +1,7 @@
+module Rails
+  def self.env: -> untyped
+
+  class Railtie
+    def self.config: -> untyped
+  end
+end
