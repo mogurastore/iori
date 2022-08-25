@@ -2,6 +2,10 @@ name: Ruby Gem
 
 on:
   workflow_dispatch:
+    inputs:
+      otp-code:
+        description: OTP code
+        required: true
 
 jobs:
   build:
@@ -27,4 +31,5 @@ jobs:
           gem build *.gemspec
           gem push *.gem
         env:
-          GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
+          GEM_HOST_API_KEY: "${{ secrets.RUBYGEMS_AUTH_TOKEN }}"
+          GEM_HOST_OTP_CODE: "${{ github.event.inputs.otp-code }}"
